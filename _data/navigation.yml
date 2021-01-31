@@ -1,0 +1,30 @@
+#Please use the main menu items under the "text"
+
+- text: Главная
+  url: /
+- text: О Компании
+  url: /pages/about
+- text: Наша Продукция
+  url: /pages/all-products
+  submenu:
+  - text: Вся Продукция
+    url: /pages/all-products
+  - text: Весы с Радиоканалом
+    url: /pages/products-radio
+  - text: Весы с Термозащитой
+    url: /pages/products-thermal
+- text: Наши Клиенты
+  url: /pages/clients
+- text: Полезно
+  url: /
+  submenu:
+  - text: Метрологические характеристики весов ВЕК
+    url: /pages/metrology
+  - text: Пример паспорта на крановые весы
+    url: /pages/passport
+  - text: Пример паспорта на радиопульт РМ-05
+    url: /pages/passport-rm05   
+  - text: Пример паспорта на радиопульт РМ-05
+    url: /pages/passport-rm08
+- text: Контакты
+  url: /pages/contact
