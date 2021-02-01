@@ -120,6 +120,11 @@ h1 {
 h2 {
 	font-size: 35px;
 }
+
+h2.orange {
+	color: #ff5e14;
+	font-weight: 600;
+}
 h3 {
 	font-size: 28px;
 }
@@ -661,7 +666,7 @@ label {
 	background: #000;
 	opacity: .7;
 }
-.slider-content h1 {
+.slider-content h1{
 	font-size: 62px;
 	font-weight: 800;
 	color: #fff;

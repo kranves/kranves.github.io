@@ -8,7 +8,14 @@ logo: "/assets/img/logo/logo.png"
 logo_2: "/assets/img/logo/logo.png"
 # mailchimp_list: "https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=342411fb35"
 # mailchimp_input_name: "b_307862c135e4548eecf86f389_342411fb35"
+min_weight: "1000кг"
+max_weight: "100т"
 
+age_market: "20 лет"
+age_serial: "14 лет"
+
+
+###### Jekyll configs ######
 permalink: "/:title"
 
 # Build settings
@@ -18,7 +25,6 @@ plugins:
   - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-archives
-  - jekyll-maps
 
 cover_image: "/assets/img/bg/page-title.jpg"
 
