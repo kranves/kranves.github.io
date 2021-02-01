@@ -245,7 +245,7 @@ label {
 	display: inline-block;
 }
 .top-btn a {
-    text-transform: capitalize;
+    text-transform: uppercase;
     background: #ff5e14;
     padding: 10px 15px;
     margin-left: 15px;

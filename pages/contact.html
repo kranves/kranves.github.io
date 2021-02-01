@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Contact
+location:
+  latitude: 50.0462316000023
+  longitude: 36.29063093555425 
 ---
 
 <!-- contact-area -->
@@ -37,7 +40,8 @@ title: Contact
         <div class="row">
             <div class="col-12">
                 <div class="maps">
-                    <a href="#"><img src="/assets/img/map.png" class="img-fluid" alt=""></a>
+                    <!-- <a href="#"><img src="/assets/img/map.png" class="img-fluid" alt=""></a> -->
+                    {% google_map %}
                 </div>
             </div>
         </div>
