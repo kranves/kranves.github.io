@@ -1,9 +1,8 @@
 ---
 layout: featured
-title: Official Support
-icon: /assets/img/icons/american-sign-language-interpreting-solid.svg
-image: /assets/img/services/02.jpg
-description: Dedicated support quaerat parturient denouncing pleasure and praising pain was born and I will give you a complete.
+title: Поверка и юстировка в Харькове
+icon: /assets/img/icons/size.png
+description: Мы проектировали габариты наших весов так, чтобы они становились точно в просвет испытательных машин в Харьковском центре метрологии, что облегчает процесс поверки и юстировки и делает его более доступным!
 ---
 
 <div class="row">
@@ -21,7 +20,7 @@ description: Dedicated support quaerat parturient denouncing pleasure and praisi
 <div class="row">
     <div class="col-xl-6 col-lg-12">
         <div class="s-details-img mb-30">
-            <img src="{{site.baseurl}}/assets/img/service/2.jpg" alt="{{page.title}}">
+            <img src="{{site.baseurl}}/assets/img/service/4.jpg" alt="{{page.title}}">
         </div>
     </div>
     <div class="col-xl-6 col-lg-12">

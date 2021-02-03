@@ -793,7 +793,7 @@ label {
 	padding: 50px 30px;
 }
 .features-wrap:hover {
-	background-image: url(../img/about/5.jpg);
+	background-image: url(../img/about/feature-bg.jpg);
 	background-size: cover;
 	background-position: center center;
 	background-attachment: local;
@@ -812,6 +812,23 @@ label {
 	font-size: 14px;
 	font-weight: 600;
 	color: #ff5e14;
+}
+
+.products-wrap {
+	border: 1px solid #e6e6e6;
+	padding: 50px 30px;
+}
+.products-wrap h4 {
+	font-weight: 600;
+	color: #1e2331;
+	margin-bottom: 17px;
+	font-size: 18px;
+}
+.products-wrap a,
+.products-wrap a:hover {
+	font-size: 14px;
+	font-weight: 600;
+	color: white;
 }
 .home-three-about {
 	margin-top: -150px;
@@ -1014,6 +1031,13 @@ label {
 .service-details h3 {
 	font-size: 22px;
 	font-weight: 700;
+}
+.service-details ul {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 26px;
+	color: #7e7e7e;
+	margin-bottom: 15px;
 }
 .service-details img {
 	width: 100%;
