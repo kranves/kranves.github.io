@@ -793,7 +793,7 @@ label {
 	padding: 50px 30px;
 }
 .features-wrap:hover {
-	background-image: url(../img/about/feature-bg.jpg);
+	background-image: url(../img/feature-bg.jpg);
 	background-size: cover;
 	background-position: center center;
 	background-attachment: local;
