@@ -9,7 +9,8 @@
             </div>
         </div>
         <div class="row">
-            {% for product in site.products %}
+            {% assign products = site.products | sort:max_weight %}
+            {% for product in products %}
             <div class="col-lg-4 col-md-6 text-center mb-30">
                 <div class="products-wrap">
                     {% if product.icon %}

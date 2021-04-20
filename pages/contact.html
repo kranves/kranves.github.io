@@ -3,30 +3,38 @@ layout: page
 title: Contact
 permalink: /contact/
 ---
-
+{% include call_to_action.html %}
 <!-- contact-area -->
 <section class="contact-area pb-70 pt-100">
     <div class="container">
         <div class="row">
             <div class="col-xl-4 col-md-4 text-center text-md-left mb-30">
                 <div class="contact-person">
-                    <h4>Micro Center.</h4>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna posuere.</p>
-                    <a href="#" class=""><i class="far fa-calendar-alt"></i>Mon - Fri 9:00 am - 2:00 PM</a>
+                    <h4>Адрес Производства</h4>
+                    <p>Механическое производство:</p>
+                    <p style="color:#ff5e14;"><i class="fas fa-map-marker-alt"></i> ул. Екатерининская (бывшая Примакова), 40-42<br>г. Харьков</p>
+                    <p>Лаборатория электроники:</p>
+                    <p style="color:#ff5e14;"><i class="fas fa-map-marker-alt"></i> ул. Проскуры, 12<br>г. Харьков</p>
                 </div>
             </div>
             <div class="col-xl-4 col-md-4 text-center text-md-left mb-30">
                 <div class="contact-person">
-                    <h4>Enquiry Phone.</h4>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna posuere.</p>
-                    <a href="#" class=""><i class="fas fa-phone"></i>(+01) 204 0234 2065</a>
+                    <h4>Контакные телефоны</h4>
+                    <p>Медведев Юрий Александрович</p>
+                    <a href="tel:+38{{site.phone_uvc_1 | remove: " "}}"><i class="fas fa-phone"></i> (+38) {{site.phone_uvc_1}}</a>
+                    <a href="tel:+38{{site.phone_uvc_2 | remove: " "}}"><i class="fas fa-phone"></i> (+38) {{site.phone_uvc_2}}</a><br>
+                    <p>Козырев Александр Алексеевич</p>
+                    <a href="tel:+38{{site.phone_koz_a_1 | remove: " "}}"><i class="fas fa-phone"></i> (+38) {{site.phone_koz_a_1}}</a>
+                    <a href="tel:+38{{site.phone_koz_a_2 | remove: " "}}"><i class="fas fa-phone"></i> (+38) {{site.phone_koz_a_2}}</a><br>
+                    <p>Козырева Наталия Ивановна</p>
+                    <a href="tel:+38{{site.phone_koz_n | remove: " "}}"><i class="fas fa-phone"></i> (+38) {{site.phone_koz_n}}</a>
                 </div>
             </div>
             <div class="col-xl-4 col-md-4 text-center text-md-left mb-30">
                 <div class="contact-person">
-                    <h4>Drop a line</h4>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna posuere.</p>
-                    <a href="#" class=""><i class="far fa-envelope"></i>info@admin.net</a>
+                    <h4>Электронная почта</h4>
+                    <p>Нужна помощь? Отправьте нам запрос электронной почтой.</p>
+                    <a href="maito:{{site.email}}" class=""><i class="far fa-envelope"></i>{{site.email}}</a>
                 </div>
             </div>
         </div>
@@ -45,13 +53,12 @@ permalink: /contact/
     </div>
 </div> -->
 <!-- contact-form -->
-<section class="contact-form pb-100 pt-100">
+<!-- <section class="contact-form pb-100 pt-100">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
                 <div class="contact-form-title">
-                    <h2>Let’s talk</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi tempora veritatis nemo aut ea iusto eos est expedita,quas ab adipisci.</p>
+                    <h2>Есть вопрос или предложение?<br>Напишите нам</h2>
                 </div>
             </div>
         </div>
@@ -60,19 +67,19 @@ permalink: /contact/
                 <form id="contact-form" action="mail.php" class="contact-form" method="POST">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 mb-20">
-                            <input name="name" type="text" placeholder="Name">
+                            <input name="name" type="text" placeholder="Имя">
                         </div>
                         <div class="col-xl-6 col-lg-6 mb-20">
-                            <input name="email" type="email" placeholder="Email">
+                            <input name="email" type="email" placeholder="Адрес электронной почты">
                         </div>
                         <div class="col-xl-12 mb-20">
-                            <input name="subject" type="text" placeholder="Subject">
+                            <input name="subject" type="text" placeholder="Тема запроса">
                         </div>
                         <div class="col-xl-12 mb-20">
-                            <textarea name="message" id="text-message" cols="30" rows="10" placeholder="Message*"></textarea>
+                            <textarea name="message" id="text-message" cols="30" rows="10" placeholder="Введите Ваше сообщение"></textarea>
                         </div>
                         <div class="col-xl-12 text-center">
-                            <button class="btn" type="submit">Send Mail</button>
+                            <button class="btn" type="submit">Отправить запрос</button>
                         </div>
                     </div>
                 </form>
@@ -80,4 +87,4 @@ permalink: /contact/
             </div>
         </div>
     </div>
-</section>
+</section> -->

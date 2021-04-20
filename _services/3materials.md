@@ -1,10 +1,10 @@
 ---
-layout: featured
+layout: page
 title: Лучшие комплектующие
 icon: /assets/img/icons/layers.svg
 description: Наши весы изготовляются с использованием комплектующих только ведущих мировых производителей (Kingbright, Analog Devices, Atmel, Vishay). Мы проводим полный цикл технологических и климатических тестов на каждом этапе производства и отгрузки.
 ---
-
+<!-- 
 <div class="row">
     <div class="col-md-12">
         <div class="service-details mb-40">
@@ -43,4 +43,4 @@ description: Наши весы изготовляются с использов�
         commodo pharetra est eros bibendum elit nec luctus magna felis sollicitudin mauris.
         Integer in mauris nibh euismod gravida.
         Duis ac tellus et risus vulputate vehicula.</p>
-</div>
+</div> -->

@@ -1,5 +1,4 @@
 title: "НПП \"ВЕК\""
-email: "nppvek@gmail.com"
 description: >- # this means to ignore newlines until "baseurl:"
  Нужны хорошие весы? Мы их производим!
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -14,6 +13,17 @@ max_weight: "100т"
 age_market: "20 лет"
 age_serial: "14 лет"
 
+####### КОНТАКТЫ #######
+
+email: "nppvek@gmail.com"
+
+phone_uvc_1: "050 300 87 00"   # Медведев Юрий Александрович
+phone_uvc_2: "098 900 87 00"   # Медведев Юрий Александрович
+
+phone_koz_a_1: "050 303 43 73" # Козырев Александр Алексеевич
+phone_koz_a_2: "067 572 75 98" # Козырев Александр Алексеевич
+
+phone_koz_n: "099 385 55 64"   # Козырева Наталия Ивановна
 
 ###### Jekyll configs ######
 permalink: "/:title"

@@ -1,10 +1,10 @@
 ---
-layout: featured
+layout: paage
 title: Поверка и юстировка в Харькове
 icon: /assets/img/icons/size.png
 description: Мы проектировали габариты наших весов так, чтобы они становились точно в просвет испытательных машин в Харьковском центре метрологии, что облегчает процесс поверки и юстировки и делает его более доступным!
 ---
-
+<!-- 
 <div class="row">
     <div class="col-md-12">
         <div class="service-details mb-40">
@@ -43,4 +43,4 @@ description: Мы проектировали габариты наших вес�
         commodo pharetra est eros bibendum elit nec luctus magna felis sollicitudin mauris.
         Integer in mauris nibh euismod gravida.
         Duis ac tellus et risus vulputate vehicula.</p>
-</div>
+</div> -->

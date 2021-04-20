@@ -765,6 +765,25 @@ label {
 	padding: 0 190px;
 	margin-bottom: 10px;
 }
+.section-title h4 {
+	position: relative;
+	margin-bottom: 45px;
+	display: inline-block;
+	font-weight: 600;
+	line-height: 1;
+}
+.post-comments .section-title h4 {
+	margin-bottom: 15px;
+}
+.section-title h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 60px;
+	height: 2px;
+	background: #ff5e14;
+	bottom: -25px;
+}
 .about-info-text h2 {
 	margin-bottom: 23px;
 	text-transform: capitalize;
@@ -915,6 +934,9 @@ label {
 }
 .call-to-action p {
 	margin: 0;
+}
+.call-to-action a {
+	color:#ff5e14;
 }
 .white-text h3 {
 	color: #fff;

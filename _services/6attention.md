@@ -1,9 +1,9 @@
 ---
 layout: featured
-title: Themes & plugins
+title: Экспертный сервис
 icon: /assets/img/icons/address-card-solid.svg
 image: /assets/img/services/05.jpg
-description: Features & plugins parturient denouncing pleasure and praising pain was born and I will give you a complete.
+description: Наши специалисты обладают высокими навыками и опытом, и способны полностью удовлетворять любые Ваши предложения, в том числе уникальные, и гарантировать качество каждых выпущенных весов.
 ---
 
 <div class="row">

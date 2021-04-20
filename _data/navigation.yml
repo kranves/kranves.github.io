@@ -2,8 +2,6 @@
 
 - text: Главная
   url: /
-- text: О Компании
-  url: /about
 - text: Наша Продукция
   url: /all-products
   submenu:
@@ -13,8 +11,6 @@
     url: /products-radio
   - text: Весы с Термозащитой
     url: /products-thermal
-- text: Наши Клиенты
-  url: /clients
 - text: Полезно
   url: #
   submenu:
@@ -26,5 +22,7 @@
     url: /passport-rm05   
   - text: Пример паспорта на радиопульт РМ-08
     url: /passport-rm08
+- text: О Компании
+  url: /about
 - text: Контакты
   url: /contact
