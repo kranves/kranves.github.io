@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /guarantee
+permalink: /гарантия-изготовление
 title: 3 года гарантии
 icon: /assets/img/icons/ambulance-solid.svg
 details: yes
