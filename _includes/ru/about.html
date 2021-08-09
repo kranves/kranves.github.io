@@ -1,0 +1,49 @@
+<section class="about-area pb-60 pt-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 col-lg-7 mb-40">
+                <br><br>
+                <div class="section-title">
+                    <h2>Почему наши крановые весы?</h2>
+                </div>
+                <div class="about-content">
+                    <p>Мы являемся одним из ведущих предприятий Украины по объёмам реального выпуска (не сборки из Китайских комплектов!) электронных крановых весов.<br>
+                    Более того: мы - едва ли не единственные, кто имеет полный цикл производства:<br>
+                    <i class="fa fa-1x fa-dot-circle"></i>&nbsp;&nbsp;Проектирование и разработка тензодатчика и электронных схем<br>
+                    <i class="fa fa-1x fa-dot-circle"></i>&nbsp;&nbsp;Спектральный и механический контроль качества сталей<br>
+                    <i class="fa fa-1x fa-dot-circle"></i>&nbsp;&nbsp;Прочностные и метрологические испытания 100% продукции<br>
+                    <i class="fa fa-1x fa-dot-circle"></i>&nbsp;&nbsp;Полное изготовление и нанесение защитных покрытий<br>
+                    <i class="fa fa-1x fa-dot-circle"></i>&nbsp;&nbsp;Украинский производитель</p><br>
+                    <h2 class="orange">{{site.age_market[page.lang]}} на рынке!</h2>
+                </div>
+            </div>
+<!--             <div class="col-xl-3 col-lg-6 mb-20 md-margin">
+                    <div class="col-xl-6 col-md-6 mb-20">
+                        <div class="about-img">
+                            <img src="{{site.baseurl}}/assets/img/about/about1.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div> -->
+            {% assign products = site.products | where:"title", "ВЕК-10Д" | where:"lang", page.lang %}
+            {% for product in products %}
+            <div class="col-lg-4 col-md-5 text-center mb-30">
+                <div class="products-wrap">
+                    <h4>Лидер Спроса! {{product.title}}</h4>
+                    {% if product.icon %}
+                    <div >
+                        <img src="{{product.icon}}" alt="{{product.title}}">
+                    </div>
+                    <br>
+                    {% endif %}
+                    <p>{{product.description}}</p>
+                    <div class="top-btn" data-animation="fadeInUp" data-delay=".6s">
+                        <a href="mailto:{{site.email}}?subject=Запрос о модели {{product.title}}">Отправить запрос</a>
+                    </div>
+                    <!-- <a href="{{service.url}}">Read More</a> -->
+                </div>
+            </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

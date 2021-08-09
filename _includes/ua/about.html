@@ -1,0 +1,49 @@
+<section class="about-area pb-60 pt-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 col-lg-7 mb-40">
+                <br><br>
+                <div class="section-title">
+                    <h2>Чому наші кранові ваги?</h2>
+                </div>
+                <div class="about-content">
+                    <p>Ми - лідер України з виробництва (не збірки з китайських комплектуючих!) електронних кранових вагів.<br>
+                    Окрім того, ми - ледь не єдині, хто має повний цикл виробництва:<br>
+                    <i class="fa fa-1x fa-dot-circle"></i>&nbsp;&nbsp;Проектування та розробка тензодатчика та электронних схем<br>
+                    <i class="fa fa-1x fa-dot-circle"></i>&nbsp;&nbsp;Спектральний та механічний контроль якості сталей<br>
+                    <i class="fa fa-1x fa-dot-circle"></i>&nbsp;&nbsp;Випробовування на міцність та метрологічні іспити 100% продукції<br>
+                    <i class="fa fa-1x fa-dot-circle"></i>&nbsp;&nbsp;Повне виготовлення та нанесення захисого покриття<br>
+                    <i class="fa fa-1x fa-dot-circle"></i>&nbsp;&nbsp;Український виробник</p><br>
+                    <h2 class="orange">{{site.age_market[page.lang]}} на ринку!</h2>
+                </div>
+            </div>
+<!--             <div class="col-xl-3 col-lg-6 mb-20 md-margin">
+                    <div class="col-xl-6 col-md-6 mb-20">
+                        <div class="about-img">
+                            <img src="{{site.baseurl}}/assets/img/about/about1.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div> -->
+            {% assign products = site.products | where:"title", "ВЕК-10Д" | where:"lang", page.lang %}
+            {% for product in products %}
+            <div class="col-lg-4 col-md-5 text-center mb-30">
+                <div class="products-wrap">
+                    <h4>Лідер Попиту! {{product.title}}</h4>
+                    {% if product.icon %}
+                    <div >
+                        <img src="{{product.icon}}" alt="{{product.title}}">
+                    </div>
+                    <br>
+                    {% endif %}
+                    <p>{{product.description}}</p>
+                    <div class="top-btn" data-animation="fadeInUp" data-delay=".6s">
+                        <a href="mailto:{{site.email}}?subject=Запрос о модели {{product.title}}">Відправити запит</a>
+                    </div>
+                    <!-- <a href="{{service.url}}">Read More</a> -->
+                </div>
+            </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

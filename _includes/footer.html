@@ -1,3 +1,4 @@
+{% if page.lang == "ru" %}
 <footer class="footer-section">
     <div class="container">
         <div class="footer-cta pt-80 pb-20">
@@ -39,10 +40,10 @@
                 <div class="col-xl-4 col-lg-4 mb-50">
                     <div class="footer-widget">
                         <div class="footer-logo">
-                            <img class="logoimg" src="{{site.baseurl}}{{site.logo}}" alt="{{site.short_title}}-{{site.tagline}}">{{site.short_title}}
+                            <img class="logoimg" src="{{site.baseurl}}{{site.logo}}" alt="{{site.short_title}}-{{site.tagline[page.lang]}}">{{site.short_title}}
                         </div>
                         <div class="footer-text">
-                            <p>Точность, подтвердженная профессионалами!</p>
+                            <p>{{site.moto[page.lang]}}</p>
                         </div>
                     </div>
                 </div>
@@ -82,3 +83,119 @@
         </div>
     </div>
 </footer>
+{% else if page.lang == "ua" %}
+<footer class="footer-section">
+    <div class="container">
+        <div class="footer-cta pt-80 pb-20">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Адреса для кореспонденції</h4>
+                            <span>61144 м. Харків, вул. Бучми, 32-А, кв. 91;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Контактний телефон</h4>
+                            <span><a href="tel:+38{{site.phone_uvc_1 | remove: " "}}">(+38) {{site.phone_uvc_1}}</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Електронна пошта</h4>
+                            <span>{{site.email}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-50 pb-30">
+            <div class="footer-pattern">
+                <img src="{{site.baseurl}}/assets/img/footer/footer_map.png" alt="">
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <img class="logoimg" src="{{site.baseurl}}{{site.logo}}" alt="{{site.short_title}}-{{site.tagline[page.lang]}}">{{site.short_title}}
+                        </div>
+                        <div class="footer-text">
+                            <p>{{site.moto[page.lang]}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Кранові ваги "ВЕК"</h3>
+                        </div>
+                        <ul>
+                            <li><a href="/про-компанію">Про компанію</a></li>
+                            <li><a href="/каталог-вагів">Вся Продукція</a></li>
+                            <li><a href="/ваги-з-радіоканалом">Ваги з Радіоканалом</a></li>
+                            <li><a href="/ваги-з-термозахистом">Ваги з Термозахистом</a></li>
+                            <li><a href="/гарантія-виготовлення">Комплект поставки</a></li>
+                            <li><a href="/гарантия-виготовлення">Строк виготовлення</a></li>
+                            <li><a href="/гарантия-виготовлення">Гарантія</a></li>
+                            <li><a href="/контакти">Контакти</a></li>
+                            <li><a href="/метрологія">Метрологічні характеристики вагів</a></li>
+                            <li><a href="/приклад-паспорта-ваги">Приклад паспорта на кранові ваги</a></li>
+                            <li><a href="/приклад-паспорта-радіопульт-РМ-05">Приклад паспорта на радіопульт РМ-05</a></li>
+                            <li><a href="/приклад-паспорта-радіопульт-РМ-08">Приклад паспорта на радіопульт РМ-08</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <ul>
+                        {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' | uniq %}
+                        {% for post in posts %}
+                        
+                            <li><a href="{{ post.url }}" class="{{ post.lang }}"><span class="flag-icon flag-icon-{{ post.lang }}" ></span>{{site.langs[page.lang]}}</a></li>
+                          
+                        {% endfor %}
+                        </ul>
+                        <ul>
+                        {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+                        {% for page in pages %}
+                        {% unless page contains "index_page" %}
+                        
+                            <li><a href="{{ page.url }}" class="{{ page.lang }}"><span class="flag-icon flag-icon-{{ page.lang }}" ></span> {{site.langs[page.lang]}}</a></li>
+                        
+                        {% endunless %}
+                        {% endfor %}
+                        </ul>
+                        <ul>
+                        {% assign services=site.services | where:"ref", page.ref | sort: 'lang' | uniq %}
+                        {% for service in services %}
+                        
+                            <li><a href="{{ service.url }}" class="{{ service.lang }}"><span class="flag-icon flag-icon-{{ service.lang }}" ></span> {{site.langs[page.lang]}}</a></li>
+                          
+                        {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>2021 Кранові ваги НПП "ВЕК"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endif %}

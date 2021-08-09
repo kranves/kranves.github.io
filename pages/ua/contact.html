@@ -1,0 +1,92 @@
+---
+lang: ua
+layout: page
+title: Контакти
+permalink: /контакти
+ref: contact
+---
+{% include ua/call_to_action.html %}
+<!-- contact-area -->
+<section class="contact-area pb-70 pt-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-md-4 text-center text-md-left mb-30">
+                <div class="contact-person">
+                    <h4>Адреса виробництва</h4>
+                    <p>Механічне виробництво:</p>
+                    <p style="color:#ff5e14;"><i class="fas fa-map-marker-alt"></i> вул. Єкатирининська, 40-42<br>м. Харків</p>
+                    <p>Лабораторія електроніки:</p>
+                    <p style="color:#ff5e14;"><i class="fas fa-map-marker-alt"></i> вул. Проскури, 12<br>м. Харків</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-4 text-center text-md-left mb-30">
+                <div class="contact-person">
+                    <h4>Контакні телефони</h4>
+                    <p>Медведєв Юрій Олександрович</p>
+                    <a href="tel:+38{{site.phone_uvc_1 | remove: " "}}"><i class="fas fa-phone"></i> (+38) {{site.phone_uvc_1}}</a>
+                    <a href="tel:+38{{site.phone_uvc_2 | remove: " "}}"><i class="fas fa-phone"></i> (+38) {{site.phone_uvc_2}}</a><br>
+                    <p>Козирєв Олександр Олексійович</p>
+                    <a href="tel:+38{{site.phone_koz_a_1 | remove: " "}}"><i class="fas fa-phone"></i> (+38) {{site.phone_koz_a_1}}</a>
+                    <a href="tel:+38{{site.phone_koz_a_2 | remove: " "}}"><i class="fas fa-phone"></i> (+38) {{site.phone_koz_a_2}}</a><br>
+                    <p>Козирєва Наталія Іванівна</p>
+                    <a href="tel:+38{{site.phone_koz_n | remove: " "}}"><i class="fas fa-phone"></i> (+38) {{site.phone_koz_n}}</a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-4 text-center text-md-left mb-30">
+                <div class="contact-person">
+                    <h4>Електронна пошта</h4>
+                    <p>Маєте питання? Відправте нам запит електронною поштою.</p>
+                    <a href="maito:{{site.email}}" class=""><i class="far fa-envelope"></i>{{site.email}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- contact-maps -->
+<!-- <div class="maps-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="maps">
+                    <a href="#"><img src="/assets/img/map.png" class="img-fluid" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- contact-form -->
+<!-- <section class="contact-form pb-100 pt-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="contact-form-title">
+                    <h2>Есть вопрос или предложение?<br>Напишите нам</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <form id="contact-form" action="mail.php" class="contact-form" method="POST">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 mb-20">
+                            <input name="name" type="text" placeholder="Имя">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 mb-20">
+                            <input name="email" type="email" placeholder="Адрес электронной почты">
+                        </div>
+                        <div class="col-xl-12 mb-20">
+                            <input name="subject" type="text" placeholder="Тема запроса">
+                        </div>
+                        <div class="col-xl-12 mb-20">
+                            <textarea name="message" id="text-message" cols="30" rows="10" placeholder="Введите Ваше сообщение"></textarea>
+                        </div>
+                        <div class="col-xl-12 text-center">
+                            <button class="btn" type="submit">Отправить запрос</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="ajax-response"></p>
+            </div>
+        </div>
+    </div>
+</section> -->

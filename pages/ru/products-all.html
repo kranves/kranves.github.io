@@ -1,0 +1,42 @@
+---
+lang: ru
+layout: page
+title: Продукция
+permalink: /каталог-весов
+ref: products-all
+---
+<section class="service-area grey-bg pb-70 pt-60">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 text-center mb-40">
+                <div class="section-title service-title">
+                    <h2>Продукция</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% assign products = site.products | sort:max_weight %}
+            {% for product in products %}
+            {% if product.lang == page.lang %}
+            <div class="col-lg-4 col-md-6 text-center mb-30">
+                <div class="products-wrap">
+                    {% if product.icon %}
+                    <div >
+                        <img src="{{product.icon}}" alt="{{product.title}}">
+                    </div>
+                    <br>
+                    {% endif %}
+                    <h4>{{product.title}}</h4>
+                    <p>{{product.description}}</p>
+                    <div class="top-btn" data-animation="fadeInUp" data-delay=".6s">
+                        <a href="mailto:{{site.email}}?subject=Запрос о модели {{product.title}}">Отправить запрос</a>
+                    </div>
+                    <!-- <a href="{{service.url}}">Read More</a> -->
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
