@@ -1,19 +1,40 @@
 short_title: "НПП \"ВЕК\""
-title: "НПП \"ВЕК\" - крановые весы в Украине"
-tagline: "Нужны хорошие весы? Мы их производим!"
-description: >- # this means to ignore newlines until next item
- Нужны хорошие крановые весы? Мы их производим!
- Крановые весы ВЕК с пределами взвешивания от 1000кг до 100т.
- Точность, подтвердженная профессионалами!
+title:
+  wow: "lalala"
+  ru: "НПП \"ВЕК\" - крановые весы в Украине"
+  ua: "НПП \"ВЕК\" - кранові ваги в Україні"
+tagline:
+  ru: "Нужны хорошие весы? Мы их производим!"
+  ua: "Потрібні якісні ваги? Ми їх виробляємо!"
+description:
+  ru: >- # this means to ignore newlines until next item
+    Нужны хорошие крановые весы? Мы их производим!
+    Крановые весы ВЕК с пределами взвешивания от 1000кг до 100т.
+    Точность, подтвердженная профессионалами!
+  ua: >-
+    Потрібні якісні кранові ваги? Ми їх виробляємо!
+    Кранові ваги ВЕК з лімітом взважування від 1000кг до 100т.
+    Точність, що підтвердили професіонали!
+moto:
+  ru: "Точность, подтвердженная профессионалами!"
+  ua: "Точність, що підтвердили професіонали!"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kranves.com.ua/" # the base hostname & protocol for your site, e.g. http://example.com or  https://tradejk.netlify.com
 logo: "/assets/img/logo/logo.png"
 
+lang: ua
+langs:
+  ru: На Русском
+  ua: Українською
 min_weight: "1000кг"
 max_weight: "100т"
 
-age_market: "20 лет"
-age_serial: "14 лет"
+age_market:
+  ru: "20 лет"
+  ua: "20 років"
+age_serial:
+  ru: "14 лет"
+  ua: "14 років"
 
 ####### КОНТАКТЫ #######
 
@@ -98,7 +119,9 @@ pagination:
 
   # Optional, the default locale to use, omit to disable (depends on a field 'locale' to be specified in the posts, 
   # in reality this can be any value, suggested are the Microsoft locale-codes (e.g. en_US, en_GB) or simply the ISO-639 language code )
-  locale: 'ru_UA' 
+  locale:
+    ru: 'ru_UA' 
+    ua: 'ua_UA'
 
  # Optional,omit or set both before and after to zero to disable. 
  # Controls how the pagination trail for the paginated pages look like. 
