@@ -849,6 +849,9 @@ label {
 	font-weight: 600;
 	color: white;
 }
+.products-wrap img {
+	max-height: 175px;
+}
 .home-three-about {
 	margin-top: -150px;
 	background: #fff;
